@@ -101,10 +101,10 @@ p_plotly3
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### MSE
+### Other Information
 
-$$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$
-abbreviation：
+
+Abbreviation：
 
 S - Strong signals
 
@@ -122,7 +122,17 @@ sen - sensitivity
 eg: 
 'SLASSOspe' stands for the specificity of selecting strong signals by LASSO.
 
+Definition of strong signals --- 
+$$S_1=\{j:|\beta_j|>c\sqrt{log (p) / n},\mbox{ some } c>0,  1\le j \le p\}$$
 
+Definition of weak-but-correlated signals  ---
+$$S_2=\{j: 0<|\beta_j|\le c\sqrt{log (p) / n},\mbox{ some } c>0, \mbox{corr}(X_j, X_j')\ne 0, \mbox{for some } j'\in S_1,  1\le j \le p\}$$
+
+
+Definition of weak-and-independent signals  ---
+$$S_3=\{j: 0<|\beta_j|\le c\sqrt{log (p) / n},\mbox{ some } c>0, \mbox{corr}(X_j, X_j')= 0, \mbox{for all } j'\in S_1,  1\le j \le p\}$$
+
+$$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$$
 
 ### Beta Generation
 
