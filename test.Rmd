@@ -110,7 +110,7 @@ S - Strong signals
 
 WC - Weak but correlated signals
 
-WI - Weak but independent signals
+WI - Weak and independent signals
 
 FS - Forward selection
 
